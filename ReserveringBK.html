@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang = "nl">
+
+<head>
+
+<title> SBWE </title>
+
+<!-- Verplichte metatags -->
+      <meta charset = "utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- zoektermen -->
+      <meta name = "keywords" content = "madurodam denhaag attractie">
+      <meta name= "description" content = "Een attractie in Den Haag, waar Nederland in het klein wordt weergegeven">
+      <meta name = "author" content = "Madurodam">
+<!-- Bootstrap-CSS -->
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous">
+<!-- Style CSS-->
+      <link rel="stylesheet" type="text/css" href="les22style.css">
+<!-- Lettertype -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Mogra&family=Oswald&display=swap" rel="stylesheet">
+<!-- Jquery javascript -->
+      <script src="https://code.jquery.com/jquery-3.1.0.min.js"> </script>
+      <script type="text/javascript">
+          $(document).ready(function(){
+          $("#knop").click(function(){
+          var naam = $("#naam2").val();
+
+          window.alert(
+          "Bedankt voor het reserveren van de Barthkapel, " + naam +
+          ". We zullen binnen 4 dagen antwoorden op uw aanvraag. Met vriendelijke groet, SBWE ");
+          });
+          });
+      </script>
+
+<!--favicon icoon -->
+            <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+</head>
+
+<body class="container-sm"> <!-- Breekpunt - bepalen van breedte van het beeld scherm -->
+
+
+  <!--Koptekst-->
+      <header>
+        <div class="fs-1">
+            <p> Stichting Behoud Waardevol Erfgoed </p>
+
+              <ul class="nav justify-content fs-5">
+                        <li class="nav-item">
+                          <a class="nav-link" href="Index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="Barthkapel.html">Barthkapel CC</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="Projecten.html">Projecten</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+              </ul>
+
+        </div>
+      </header>
+
+<!--Middenstuk -->
+          <div id="content">
+
+          <!--1e deel - menu -->
+                <section class ="submenu BK">
+                  <nav class="nav flex-column">
+                        <a class="nav-link active" aria-current="page" href="HomeCC.html">Home CC</a>
+                        <a class="nav-link" href="ReserveringBK.html">Reserveren Barthkapel</a>
+                        <a class="nav-link" href="#">Huurders</a>
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </nav>
+                </section>
+          </div> <!--afsluiting van id content-->
+
+
+          <!--2e deel - menu -->
+                <div class="row">
+                      <div class="col-6 tabel"> <!-- om blok rondom tabel te maken-->
+
+<!-- 1e tabel vd 3 -->
+
+                            <table class="table table-info table-hover">
+                                  <thead>
+                                    <tr>
+                                        <th scope="col">Aanvraagformulier</th>
+                                        <td></td>
+                                    </tr>
+                                  </thead>
+
+                                  <tbody>
+                                      <tr>
+                                        <td> <label for= "naam1">Naam Bedrijf: </label> </td>
+                                        <td> <input type="text" id= "naam1" > </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td> <label for= "naam2"> Contactpersoon </label> </td>
+                                        <td> <input type="text" id= "naam2" > </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td> <Label for= "tel" > Telefoonnr: </label> </td>
+                                        <td> <input type="tel" id= "tel"> </td>
+                                      </tr>
+                                  </tbody>
+                             </table>
+<!-- 2de tabel vd 3 -->
+
+
+                        <table class="table table-warning table-hover">
+                                <thead>
+                                  <tr>
+                                  <th scope="col">Datum</th>
+                                  <th scope="col">Starttijd</th>
+                                  <th scope="col">Eindtijd</th>
+                                  <th scope="col">Activiteit</th>
+                                  </tr>
+                                </thead>
+
+                                <tbody>
+                                  <tr>
+                                      <th scope="row"><input type="date" id= "ReserveringsdatumA" min="2023-01-01" max="2024-12-31"></th>
+                                      <td><input type="time" id= "tijden1" step="00:15" min="8:00" max="23:00"></td>
+                                      <td><input type="time" id= "tijden2" step="00:15" min="8:00" max="23:00"></td>
+                                      <td><input type="text" id= "Bescrhijving1"></td>
+                                  </tr>
+                                  <tr>
+                                        <th scope="row"><input type="date" id= "ReserveringsdatumB" min="2023-01-01" max="2024-12-31"></th>
+                                        <td><input type="time" id= "tijden3" step="00:15" min="8:00" max="23:00"></td>
+                                        <td><input type="time" id= "tijden4" step="00:15" min="8:00" max="23:00"></td>
+                                        <td><input type="text" id= "Bescrhijving2"></td>
+                                  </tr>
+                                  <tr>
+                                        <th scope="row"><input type="date" id= "ReserveringsdatumC" min="2023-01-01" max="2024-12-31"></th>
+                                        <td><input type="time" id= "tijden5" step="00:15" min="8:00" max="23:00"></td>
+                                        <td><input type="time" id= "tijden6" step="00:15" min="8:00" max="23:00"></td>
+                                        <td><input type="text" id= "Bescrhijving3"></td>
+                                  </tr>
+
+                                  <tr>
+                                        <th scope="row"><label for = "extra"> <h6> Extra opties </h6> </label> </th>
+                                        <td><input type="text" id= "extra"></td>
+                                        <td></td>
+                                        <td></td>
+                                  </tr>
+                              </tbody>
+                          </table>
+
+<!-- 3de tabel vd 3 -->
+
+          <table class="table table-info table-hover">
+                          <thead>
+                            <tr>
+                                <th scope="row"> <label for= "factuur"> Factuur adres  </label> </th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                          </thead>
+
+                          <tbody>
+                            <tr>
+                                  <td scope="row"> <label for= "factuur1"> Ter Attentie van: </label> </td>
+                                  <td><input type="naam" id= "factuur1" ></td>
+                                  <td></td>
+                            </tr>
+
+                            <tr>
+                                  <td scope="row"> <label for= "factuur2"> Adres: </label>  </td>
+                                  <td><input type="adres" id= "factuur2" ></td>
+                                  <td></td>
+                            </tr>
+
+                            <tr>
+                                  <td scope="row"> <label for= "factuur3"> Postcode: </label> </td>
+                                  <td> <input type="zipcode" id= "factuur3" > </td>
+                                  <td></td>
+                            </tr>
+
+                            <tr>
+                                  <td scope="row"> <label for= "factuur4"> Emailadres: </label> </td>
+                                  <td> <input type="email" id= "factuur4" > </td>
+                                  <td></td>
+                            </tr>
+                        </tbody>
+              </table> <br> <br> <br>
+
+
+      <!--button zonder Bootstrap: <button type="submit" name = "Sturen" > <b>Sturen</b></button, met = : -->
+
+      <button id ="knop" type="button" class="btn btn-info btn-sm" > Verzenden </button>
+
+      </div> <!-- afsluiting col- -->
+
+
+
+                 </div> <!--afsluiting row class -->
+            </div> <!--afsluiting van id content-->
+
+            <!--footer -->
+                                <div class = "col-12" >
+                                      <div id="menu">
+                                        <p> @copyright februari 2023 Violette Kamper </p>
+                                      </div>
+                                </div>
+
+
+<!-- Bootstrap-JavaScript-->
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous">
+      </script>
+
+<!-- No script - JavaScript-->
+
+      <noscript> Om deze website optimaal te gebruiken is het noodzakelijk om Javascript te activeren.
+      </noscript>
+
+</body> <!--  & Breekpunt - afsluiting breedte van het beeld scherm "class = container-sm"-->
+</html>

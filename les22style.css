@@ -1,0 +1,126 @@
+
+header{
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  padding: 40px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  position:fixed;
+  color: Darkblue;
+  font-family: "Mogra" ,"cursive";
+}
+
+/* Specificatie header */
+#header2{
+  font-family: "Mogra";
+  color: violet;
+  font-size: "10";
+
+}
+
+#menu{
+  background-color: white;
+  clear: fixed;
+  padding-left: 800px;
+  margin-top: 10px;
+  color: Darkblue;
+}
+
+
+body{
+  background-color:white;
+  font-family:  'Oswald', sans-serif;
+  margin: 10px;
+}
+
+#content{
+    background-color:white;
+    padding-top: 200px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    margin-left:10px;
+
+    display:flex;}
+
+  /* achtergrond foto's  */
+.Section1{
+        Background-color:#3B9C9C;
+        margin-left: 100px;
+        margin-bottom: 10px;
+        padding: 10px;}
+
+
+.Section2{
+      background-color: #3B9C9C;
+      Margin-left:100px;
+      padding: 10px;
+      color: white;
+      margin-top: 30px;}
+
+img{
+  width: 100px;
+  height:200px;
+  padding:5px;}
+
+#figkoptekst{
+width: 10px;
+height: 10px;
+}
+
+.extra{
+  width: 100%;
+  height: 200px;}
+
+a{
+  color: black;}
+
+  #div1{
+  width: 250px;
+  height:250px;
+  background-color: blue;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 20px;
+  position:relative;
+  animation-name: beweging;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;}
+
+  #div2{
+  width: 250px;
+  height:250px;
+  background-color: red;
+  margin-top: 300px;
+  margin-left:300px;
+  border-radius: 20px;
+  position: relative;
+  animation-name: beweging;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;}
+
+  @keyframes beweging{
+    0%{top: 0px;}
+    25% {left: 110px;}
+    50% {left: 210px;}
+    100% {left: 310px; background-color: yellow;}}
+
+
+a:hover{
+  color: grey;}
+
+.tabel{
+margin-left: 100px;
+padding-top:20px;}
+
+.blok1{
+  Background-color:#43C6DB;
+}
+
+#knop{
+  background-color: pink;
+  Border-color: black;
+}
+  /* OPMERKINGEN
+     position:
+     1) absolute 2)relative 3)fixed 4)static */
