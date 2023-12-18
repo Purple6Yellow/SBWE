@@ -1,0 +1,51 @@
+
+
+/*            Algemeen: headers         */
+
+.boven{
+    width:100%;
+    height: 100px;
+    background-color:#00151be1 ;
+    position: fixed;
+        top:5px;
+    text-align: center;
+    color: white;
+}
+
+
+li.H{
+    position: absolute;
+        top: 60px;
+        right:0px;
+    display: block;
+    width: 10%;
+}
+
+a.H{
+    color:white;
+    text-decoration:none;
+    font-size: 16px;
+
+}
+a.H:hover{
+    color:rgb(rgb(9, 7, 0));
+    text-decoration:none;
+
+}
+
+.pagina{
+    color:rgb(228, 187, 21);
+    position: absolute;
+        left: 5px;
+        top:60px;
+    font-size: 16px;
+
+}
+
+/*             Algemeen: footer         */
+.footer{
+    background-color:#00151be1;
+    text-align: center;
+}
+
+

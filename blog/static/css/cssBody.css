@@ -1,0 +1,41 @@
+/*  Geordernd op html pagina */
+
+
+
+/* AgendaBK */
+
+
+
+#calendar{
+    background-color: orange;
+}
+
+
+/* Contact */
+
+.bovencontact{
+    position: absolute;
+        top: 0px;
+        right: 100px;
+    color:rgb(247, 199, 3);
+    font-size: 16px;
+}
+
+.contact{
+    margin: 200px 0 0 300px;
+    padding:10px
+}
+
+
+
+a.H2{
+    color:white;
+    text-decoration:none;
+    font-size: 16px;
+
+}
+a.H2:hover{
+    color:rgb(rgb(9, 7, 0));
+    text-decoration:none;
+
+}

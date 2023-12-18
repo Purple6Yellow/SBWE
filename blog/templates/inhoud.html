@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+
+    <head>
+        <title> Stichting Behoud Waardevol Erfgoed</title>
+        <meta charset = "utf-8">
+
+        {% load static %}
+        <!-- Style CSS-->
+        <link rel="stylesheet" type="text/css" href="{%static 'css/cssHeader.css' %}">
+        <link rel="stylesheet" type="text/css" href="{%static 'css/cssBody.css' %}">
+        <link rel="stylesheet" type="text/css" href="{%static 'css/cssStyle.css' %}">
+
+  
+
+</head>
+
+<body>
+            <!-- schuine boven gedeelte-->
+            <div id="blauwblok">  </div>
+
+            <!-- middenstuk-->
+            <div class = "menuV">
+          
+                    <ul>  
+
+                        <li> <a class="V" href="/index.html"> Home     </a></li> <br>
+                        <li> <a class="V" href="/VerhuurBK.html"> Verhuur Barthkapel </a></li> <br>
+                        <li> <a class="V" href="/Panden.html"> Panden </a></li><br>
+                        <li> <a class="V" href="/Ateliers.html"> Ateliers  </a></li><br>
+                        <li> <a class="V" href=""> Historie </a></li><br>
+                        <li> <a class="V" href=""> Over SBWE  </a></li><br>
+                        <li> <a class="V" href="/Fotogalerie.html"> Fotogalerie </a></li> <br>
+                        <li> <a class="V" href="/Contact.html"> Contact  </a></li><br>
+         
+                    </ul>
+            </div>
+
+        
+            <!-- schuine onder gedeelte-->
+            <div id="Onderblok"> </div>
+
+
+            <!-- Javascript-->
+            <script src= {%static 'js/jquery.js' %} ></script>
+            <script src= {%static 'js/jquery.min.js' %} ></script>
+
+
+            <script>
+                $(document).ready( function() {
+
+                    console.log("document is ready");
+                            $('#blauwblok')
+                            .hide()
+                            .slideDown('9000').delay('300');
+                            $('#Onderblok')
+                            .hide()
+                            .slideDown('9000').delay('3000')
+                });            
+
+    <footer>
+    </footer>
+
+
+
+</body>
+</html>

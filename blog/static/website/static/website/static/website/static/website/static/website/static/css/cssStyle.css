@@ -1,0 +1,263 @@
+
+
+
+/*    Algemeen: Bootstrap grid indeling       */
+
+.blok1{
+    margin-top: 150px;
+}
+
+
+
+#navWrap{
+    width: 70%;
+    height:80%;
+    position:absolute;
+    top:10%;
+    margin:0 auto;
+    right:0;
+    left:0;}
+
+
+
+/* volgens mij niet gebruikt 
+
+#menuH{
+    position: relative;
+    width:100%;
+    height: 20px;
+    background-color: hsla(193, 95%, 9%, 0.882);
+    color: white;
+}
+
+*/
+
+.LiLijst{
+    width: 100%;
+    position: static;
+}
+
+
+section{
+    display: flex; 
+    padding: 5px;
+    background-color:white;
+    /*height:100%; */   
+}
+
+
+.Inhoud1{
+    display: block;
+    padding: 10px;
+    width:30%;
+    background-color: hsla(208, 79%, 13%, 0.882);
+    
+    
+}
+
+.Inhoud2{
+    display:inline-block;
+    width:63%;
+    background-color: white;
+    
+    
+}
+
+
+
+
+.imgklein{
+    width: 250px;
+    height: 120px;
+}
+
+/* linkerkant image */
+.imgkleinSt{
+    width: 300px;
+    height: 250px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+
+
+     /*
+      position: relative;
+    bottom: 200px;
+    left: 400px;
+    vertical-align: middle;
+    float: right;
+    display: inline-block
+    position: relative;
+       top:15px;
+    right: 50px;
+    
+    static = op normale plaats
+    absoluut = verplaatsing tov bronelement
+    relatief = verplaatsing tov zijn oorspronkelijke plaats
+    fixes = gelijk aan absoluut + 1: scrolled niet weg. 2. bronelement is altijd de body
+    */
+
+p{
+    padding:15px;
+}
+
+/* Algemeen middendeel */
+
+
+
+
+
+.tekstgebied{
+    padding: 20px; 
+
+}
+
+/* positie tekst */
+
+.tekstcenter{
+    text-align: center;
+}
+
+.tekstRe{
+    text-align: right;
+}
+
+
+/* breedte vlak */
+
+.middelbreed{
+    display: block;
+    width: 80%;
+    padding: 10px;
+    background-color: white;
+}
+
+/* positie image */
+
+.right{
+    width: 30%;
+    height: 50%;
+    vertical-align: middle;
+    float: right;
+    padding: 15px;
+}
+
+.left{
+    width: 30%;
+    height: 50%;
+    vertical-align: middle;
+    float: left;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+/*             sheet: inhoud          */
+
+
+#blauwblok{
+    background-color: #00151be1;
+    width: 2000px;
+    height: 60%;
+    transform: rotate(20deg) translateY(-400px);
+    opacity:0.8;
+    position: fixed;
+        top:0px;
+        right: 0px;
+}
+
+
+#Onderblok{
+    background-color:#00151be1;
+    width: 2000px;
+    height: 60%;
+    transform: rotate(20deg) translateY(600px);
+    opacity:0.8;
+    position: fixed;
+        top:0px;
+        right: 0px;
+}
+
+.menuV{
+    background-color:white;
+    position:absolute;
+        top:120px;
+        left: 400px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight:700;
+}
+
+a.V{
+    color:#00151be1;
+    text-decoration:none;
+}
+a.V:hover{
+    color:rgb(228, 187, 21);
+}
+
+
+/*          sheet: home_index,html 
+            sheet: VerhuurBK                       */
+
+#buttonBK{
+    width:200px;
+    border: 3px solid rgb(241, 208, 24);
+    color:white;
+    background-color: rgb(241, 208, 24);
+    margin:300px 0 0 150px;
+    rotate: 0deg;
+    box-shadow: 5px 10px rgb(161, 161, 9);
+}
+
+#buttonReser{
+    width:200px;
+    border: 3px solid rgb(241, 208, 24);
+    color:white;
+    background-color: rgb(241, 208, 24);
+    margin:300px 0 0 150px;
+    rotate: 0deg;
+    box-shadow: 5px 10px rgb(161, 161, 9);
+}
+
+#buttonAgenda{
+    width:200px;
+    border: 3px solid rgb(241, 208, 24);
+    color:white;
+    background-color: rgb(241, 208, 24);
+    position: relative;
+        top:10px;
+        left: 10px;
+    rotate: 0deg;
+    box-shadow: 5px 10px rgb(161, 161, 9);
+}
+
+#buttonRes{
+    margin: 0 0 0 100px;
+}
+
+
+/*     sheet: contact       */
+
+/*     sheet: algemeen      (header zie boven)    */
+
+
+.img3st{
+    width: 80%;
+} 
+
+figure{
+    text-align: center; 
+    display: block;
+}
+
+ /*            Einde        */
+ 
+
