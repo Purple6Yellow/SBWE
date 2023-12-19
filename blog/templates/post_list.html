@@ -48,22 +48,22 @@
                     <div class="container blok1">
 
                         <div class="row">  
-                          <div class="col-4">  
-                            
-                            <button id="buttonBK">Barthkapel Verhuur</button> 
-                          </div>
+
+                          <div class = "col-2"></div>
                           <div class="col-8">      
-                                                
+
                                 {% block content %}
                                 {% for post in posts %}
                                 <article class ="post">
                                     <time class = "date"> 
                                     
-                                        {{ post.published_date }}
+                                        {{ post.created_date }}
+
 
                                     </time>
 
                                     <h2> <a href=""> {{ post.title }}</a></h2>
+                                    <p></p>
                                     <p> {{ post.text|linebreaksbr }}</p>
                                 </article>
                                 {% endfor %}
@@ -73,36 +73,6 @@
                         </div>
         
                                
-                    
-        
-        
-        
-                        <div class="row">
-                          <div class="col">
-                          </div>
-                        </div>
-        
-                        <div class="row">
-                            <div class="col">
-                                <figure>
-                                    <a href="/VerhuurBK.html"> <img class="img3st" src="{%static 'img/NotreDame.webp' %}" alt="Verhuur Barthkapel"> </a> <br>
-                                    <figcaption>Verhuur Barthkapel</figcaption>
-                                </figure>
-                            </div>
-                            <div class="col">
-                                <figure>
-                                    <a href="/Panden.html"> <img class="img3st" src="{%static 'img/NotreDame.webp' %}" alt="panden"> </a> <br>
-                                    <figcaption>Panden</figcaption>
-                                </figure>
-                            </div>
-                            <div class="col">
-                                
-                            <figure>
-                                <a href="/Ateliers.html"> <img class="img3st" src="{%static 'img/NotreDame.webp' %}" alt="Ateliers"> </a> <br>
-                                <figcaption>Ateliers</figcaption>
-                            </figure>
-                            </div>
-                          </div>
                       </div>
         
         
