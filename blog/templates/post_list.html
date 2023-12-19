@@ -30,7 +30,7 @@
              
                     <h1>Stichting Behoud Waardevol Erfgoed</h1>
                     <h5> Cultureel vastgoed</h5>
-                    <h5 class="pagina"> Programma Barthkapel </h5>
+                    <h5 class="pagina"></h5>
                     
                     <div>
                         <li class="H"> <a class="H" href="/inhoud.html"> Menu  </a></li> 
@@ -38,63 +38,58 @@
         </header>
 
 
+        <!--SECTION-->
+
+        <div class="container blok1">
+
+            <p class="LetA">Programma Barthkapel</p>
+
+            <div class="row">  
+
+                <div class = "col-2"></div>
+                <div class="col-8">      
+
+                    {% block content %}
+                    {% for post in posts %}
+                    <article class ="post">
+                        <time class = "date"> 
+                        
+                            {{ post.created_date }}
 
 
+                        </time>
 
+                        <h2> <a href=""> {{ post.title }}</a></h2>
+                        <p></p>
+                        <p> {{ post.text|linebreaksbr }}</p>
+                    </article>
+                    {% endfor %}
+                    {% endblock %}
 
+                </div>
+            </div>
+                    
+        </div>
 
-                    <!--SECTION-->
-
-                    <div class="container blok1">
-
-                        <div class="row">  
-
-                          <div class = "col-2"></div>
-                          <div class="col-8">      
-
-                                {% block content %}
-                                {% for post in posts %}
-                                <article class ="post">
-                                    <time class = "date"> 
-                                    
-                                        {{ post.created_date }}
-
-
-                                    </time>
-
-                                    <h2> <a href=""> {{ post.title }}</a></h2>
-                                    <p></p>
-                                    <p> {{ post.text|linebreaksbr }}</p>
-                                </article>
-                                {% endfor %}
-                                {% endblock %}
-
-                          </div>
-                        </div>
+        <!--SECTION-->
         
-                               
-                      </div>
-        
-        
-                    <!--SECTION-->
-        
-            <footer class="footer">
-                <p> @ Copyright 2023 </p>
-                <p> Stichting Behoud Waardevol Erfgoed </p>
-            </footer>
-        
-                <!-- Javascript-->
-                <script src="{%static 'js/jquery.js' %}"></script>
-                <script src="{%static 'js/jquery.min.js' %}"></script>
-        
-                <script> 
-        
-                    $('#buttonBK').on('click', function URL(){
-                        location.href = "/VerhuurBK.html";
-        
-                    });
-        
-                </script>
+        <footer class="footer">
+            <p> @ Copyright 2023 </p>
+            <p> Stichting Behoud Waardevol Erfgoed </p>
+        </footer>
+    
+        <!-- Javascript-->
+        <script src="{%static 'js/jquery.js' %}"></script>
+        <script src="{%static 'js/jquery.min.js' %}"></script>
+
+        <script> 
+
+            $('#buttonBK').on('click', function URL(){
+                location.href = "/VerhuurBK.html";
+
+            });
+
+        </script>
 
     </body>
 </html>

@@ -8,10 +8,61 @@
 
 #calendar{
     background-color: orange;
+} 
+    
+/* inhoud.html         */
+
+
+#blauwblok{
+    background-color: #00151be1;
+    width: 2000px;
+    height: 60%;
+    transform: rotate(20deg) translateY(-400px);
+    opacity:0.8;
+    position: fixed;
+        top:0px;
+        right: 0px;
 }
 
 
-/* Contact */
+#Onderblok{
+    background-color:#00151be1;
+    width: 2000px;
+    height: 60%;
+    transform: rotate(20deg) translateY(600px);
+    opacity:0.8;
+    position: fixed;
+        top:0px;
+        right: 0px;
+}
+
+.menuV{
+    background-color:white;
+    position:absolute;
+        top:110px;
+        left: 400px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight:700;
+    text-shadow: #00151be1;
+}
+
+a.V{
+    /* menu verwijzing */
+    list-style-type: style type disc; ;
+    color:#00151be1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:30px;
+    
+}
+
+a.V:hover{
+    color:rgb(228, 187, 21);
+}
+
+
+
+/* Contact.html */
 
 .bovencontact{
     position: absolute;
