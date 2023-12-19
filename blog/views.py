@@ -8,7 +8,7 @@ def post_list(request):
 
 
 def Inhoud (request):
-    return render (request, 'Inhoud.html', {})
+    return render (request, 'inhoud.html', {})
 
 def Home (request):
     return render (request, 'index.html', {})
