@@ -1,3 +1,4 @@
+{% extends 'post_base.html' %}   
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -47,23 +48,25 @@
             <div class="row">  
 
                 <div class = "col-2"></div>
-                <div class="col-8">      
+                <div class="col-8">   
+                   
 
-                    {% block content %}
-                    {% for post in posts %}
-                    <article class ="post">
-                        <time class = "date"> 
-                        
-                            {{ post.created_date }}
+                        {% block inhoud %}
+
+                        {% for post in posts %}
+                        <article class ="post">
+                            <time class = "date"> 
+                            
+                                {{ post.created_date }}
 
 
-                        </time>
+                            </time>
 
-                        <h2> <a href=""> {{ post.title }}</a></h2>
-                        <p></p>
-                        <p> {{ post.text|linebreaksbr }}</p>
-                    </article>
-                    {% endfor %}
+                            <h2> <a href="{% url 'post_inhoud' pk=post.pk %}"> {{ post.title }}</a></h2>
+                            <p></p>
+                            <!-- <p> {{ post.text|linebreaksbr }}</p> -->
+                        </article>
+                        {% endfor %}
                     {% endblock %}
 
                 </div>
