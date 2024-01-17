@@ -37,7 +37,6 @@
 }
 
 .menuV{
-    background-color:white;
     position:absolute;
         top:100px;
         left: 400px;
@@ -45,6 +44,7 @@
     font-size: 30px;
     font-weight:700;
     text-shadow: #00151be1;
+   
 }
 
 a.V{
@@ -52,6 +52,7 @@ a.V{
     color:#00151be1;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size:30px;
+    text-decoration: none;
 }
 
 a.V:hover{
@@ -87,4 +88,42 @@ a.H2:hover{
     color:rgb(rgb(9, 7, 0));
     text-decoration:none;
 
+}
+
+
+/* index.html*/
+.imgEnkel{
+    width: 50%;
+    margin-top:0px;
+}
+
+#Vlak{
+    border-color: 1px solid;
+    width: 20%;
+    background-color:yellow;
+}
+
+/* post_base.html*/
+/* post_list.html*/
+
+.Content_blok{
+    background-color: yellow;
+    margin: 100px 100px 100px 100px;
+    position:absolute;
+        top:150px;
+        left:100px;
+}
+
+
+/*    Algemeen:        */
+
+/*  Bootstrap grid indeling  */
+
+.blok1{
+    margin-top: 150px;
+}
+
+/* reserveringBK */
+.img3st{
+    width: 80%;
 }

@@ -38,6 +38,8 @@ def Reservering (request):
 def AgendaBK (request):
     return render (request, 'AgendaBK.html', {})
 
+def Beschikbaarheid (request):
+    return render (request, 'Beschikbaarheid.html', {})
 
 def Contact (request):
     return render (request, 'Contact.html', {})

@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+
+    <head>
+        <title> Stichting Behoud Waardevol Erfgoed</title>
+        <meta charset = "utf-8">
+
+        {% load static %}
+        <!-- Style CSS-->
+        <link rel="stylesheet" type="text/css" href="{%static 'css/cssHeader.css' %}">
+        <link rel="stylesheet" type="text/css" href="{%static 'css/cssBody.css' %}">
+        <link rel="stylesheet" type="text/css" href="{%static 'css/cssStyle.css' %}">
+
+       
+        <!-- Bootstrap-CSS -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+        crossorigin="anonymous">
+
+        <!-- Beeldscherm: computer & telefoon -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+
+    <body>
+        <header class="boven">
+            <!-- 1e  deel -->
+         
+                <h1>Stichting Behoud Waardevol Erfgoed</h1>
+                <h5> Cultureel vastgoed</h5>
+                <h5 class="pagina"> Verhuur Barthkapel </h5>
+           
+                <div>
+                    <li class="H"> <a class="H" href="/inhoud.html"> Menu  </a></li> 
+                </div>
+        </header>
+
+
+        <!--SECTION-->
+        <div class="container blok1">
+
+            <div class = "row">
+                <p> <strong> Stichting Behoud Waardevol Erfgoed </strong> verhuurt een authentieke kapel in het centrum van de stad. 
+                    De Barthkapel is te huur voor: Concerten, optredens, yogalessen, exposities, balletlessen, lezingen, kerkdiensten, workshops, vergaderingen,
+                    recepties, boekpresentaties etc.
+                    Huurders die op regelmatige basis (bijv. een ochtend in de week) willen huren, zijn ook van harte welkom. 
+                    Verstrekte muziek is niet toegestaan. 
+                </p>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-2">
+                    <figure>
+                        <a href="/ReserveringBK.html"> <img class="img3st" src="{%static 'img/NotreDame.webp' %}" alt="Reservering"> </a> <br>
+                        <figcaption>Reservering</figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-2">
+                    <figure>
+                        <a href="/AgendaBK"> <img class="img3st" src="{%static 'img/NotreDame.webp' %}" alt="Agenda Barthkapel"> </a> <br>
+                        <figcaption>Beschikbaarheid</figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-2">
+                    
+                <figure>
+                    <a href="/post_list.html"> <img class="img3st" src="{%static 'img/NotreDame.webp' %}" alt="Ateliers"> </a> <br>
+                    <figcaption>Programma Barthkapel</figcaption>
+                </figure>
+                </div>
+            </div>
+            
+
+            
+
+
+            <div class="row">  
+                <div class="col-4">
+                   <button id="buttonReser">Reservering</button> 
+                   <button id="buttonAgenda">Agenda</button> 
+                </div>
+                <div class="col-8">      
+                  <img class="img3st" src="{%static 'img/NotreDame.webp' %}" alt="Ateliers">
+                </div>
+            </div>
+        </div>
+
+
+            <!--SECTION-->
+        
+   
+        <!-- Javascript-->
+        <script src="{%static 'js/jquery.js' %}"></script>
+        <script src="{%static 'js/jquery.min.js' %}"></script>
+
+
+         <script> 
+
+            $('#buttonReser').on('click', function URL(){
+                location.href = "/ReserveringBK.html";
+
+            });
+
+            
+            $('#buttonAgenda').on('click', function URL(){
+                location.href = "/AgendaBK.html";
+
+            });
+
+        </script>
+
+        <!--footer-->
+        <footer class="footer">
+            <p> @ Copyright 2023 </p>
+            <p> Stichting Behoud Waardevol Erfgoed </p>
+        </footer>
+
+
+</body>
+</html>

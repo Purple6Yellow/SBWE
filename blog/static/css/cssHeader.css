@@ -68,3 +68,10 @@ a.H:hover{
         top:60px;
     font-size: 16px;
 }
+
+/* nieuwe stijl voor header / menu */
+
+.header{
+    background-color: yellow;
+    height: 100px;
+}

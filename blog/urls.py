@@ -13,6 +13,7 @@ urlpatterns = [
     path('VerhuurBK.html/', views.VerhuurBK),
         path('ReserveringBK.html/', views.Reservering),
         path('AgendaBK.html/', views.AgendaBK),
+        path('Beschikbaarheid.html/', views.Beschikbaarheid),
     path('Fotogalerie.html/', views.Fotogalerie),
     path('Panden.html/', views.Panden),
         path('Rembrandt.html/', views.Rembrandt),
