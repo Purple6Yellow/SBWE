@@ -24,51 +24,82 @@
 
 <body>
 
-    <!-- MENU -->
+<!-- MENU -->
+
+<div class="container-fluid">
+
     <header>
-        <nav class="navbar navbar-dark bg-transparent navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand"> Stichting Behoud Waardevol Erfgoed </a>
-                </div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="/index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="/VerhuurBK.html"> Verhuur Barthkapel
-                        <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/ReserveringBK.html"> Ruimte reserveren</a></li>
-                            <li><a href="/Beschikbaarheid.html"> Beschikbaarheid </a></li>
-                            <li><a href="/post_list.html"> Programma </a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/Panden.html">Panden</a></li>
-                    <li><a href="/Ateliers.html">Ateliers</a></li>
-                </ul>
-                
+        <div class="row">
+        <div class="col-sm-8"> 
+           <h1>  Stichting Behoud Waardevol Erfgoed </h1>
+    
             </div>
-        </nav>
+            <div class="col-sm-4">
+                <a href="/index.html" class="hmbtn">Home</a>
+               
+                <div class="dropdown">
+                <a href="/VerhuurBK.html" class="bkbtn">Barthkapel</a>
+                    <div class="dropdown-content">
+                        <a href="/ReserveringBK.html">Reservering</a>
+                        <a href="/Beschikbaarheid.html">Beschikbaarheid</a>
+                        <a href="/post_list.html">Programma</a>
+                    </div>
+                </div>
+                <a href="/Panden.html" class="pabtn">Panden</a>
+                <a href="/Atelier.html" class="atbtn">Atelier</a>
+            </div>
+        </div>
+        </div>
     </header>
+</div>
+    
+    
 <!-- EINDE MENU -->
 
 
-
-
-
-    <div class = "container">
+    <div class = "container-fluid">
         <div class="row">
-            <h4> Python Django Ajax FullCalender CRUD (Cr,R,Upd,Delet)</h4>
+         
             {% block content %} {% endblock %}
         </div>
 
     </div>
+
+
+<!-- FOOTER-->
+
+    <div class="container-fluid">
+    
+        <footer>
+            <div class="row">
+                <div class="col-sm-5">
+                </div>
+                <div class="col-sm-2"> 
+                    <h5>  Copyright 2024 - SBWE</h5>
+            
+                </div>
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-2">
+                    <a href="#" class="hibtn"> Historie</a>
+                    <a href="/Contact.html" class="hmbtn"> Contact</a>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+        
+        
+<!-- EINDE FOOTER -->
+
+
 <script>
     $(document).ready(function(){
         var calendar = $('#calendar').fullCalendar({
             header:{
                 left:'prev.next today',
                 center: 'title',
-                right: 'month, agendaWeek, agendaDay'
+                right: 'month, agendaWeek, agendaDay',
             },
 
         });

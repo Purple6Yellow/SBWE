@@ -2,6 +2,136 @@
 
 /*    tbv alle pagina's - aangepast 19 december 2023      */
 
+/*  Geordernd op html pagina */
+
+
+
+/* AgendaBK */
+
+
+
+#calendar{
+    background-color: orange;
+} 
+    
+/* inhoud.html         */
+
+
+#blauwblok{
+    background-color: #00151be1;
+    width: 2000px;
+    height: 60%;
+    transform: rotate(20deg) translateY(-400px);
+    opacity:0.8;
+    position: fixed;
+        top:0px;
+        right: 0px;
+}
+
+
+#Onderblok{
+    background-color:#00151be1;
+    width: 2000px;
+    height: 60%;
+    transform: rotate(20deg) translateY(600px);
+    opacity:0.8;
+    position: fixed;
+        top:0px;
+        right: 0px;
+}
+
+.menuV{
+    position:absolute;
+        top:100px;
+        left: 400px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight:700;
+    text-shadow: #00151be1;
+   
+}
+
+a.V{
+    /* menu verwijzing */
+    color:#00151be1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:30px;
+    text-decoration: none;
+}
+
+a.V:hover{
+    color:rgb(228, 187, 21);
+}
+
+
+
+/* Contact.html */
+
+.bovencontact{
+    position: absolute;
+        top: 0px;
+        right: 100px;
+    color:rgb(247, 199, 3);
+    font-size: 16px;
+}
+
+.contact{
+    margin: 200px 0 0 300px;
+    padding:10px
+}
+
+
+
+a.H2{
+    color:white;
+    text-decoration:none;
+    font-size: 16px;
+
+}
+a.H2:hover{
+    color:rgb(rgb(9, 7, 0));
+    text-decoration:none;
+
+}
+
+
+/* index.html*/
+.imgEnkel{
+    width: 50%;
+    margin-top:0px;
+}
+
+#Vlak{
+    border-color: 1px solid;
+    width: 20%;
+    background-color:yellow;
+}
+
+/* post_base.html*/
+/* post_list.html*/
+
+.Content_blok{
+    background-color: yellow;
+    margin: 100px 100px 100px 100px;
+    position:absolute;
+        top:150px;
+        left:100px;
+}
+
+
+/*    Algemeen:        */
+
+/*  Bootstrap grid indeling  */
+
+.blok1{
+    margin-top: 150px;
+}
+
+/* reserveringBK */
+.img3st{
+    width: 80%;
+}
+
 
 
 

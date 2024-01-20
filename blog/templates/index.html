@@ -1,159 +1,41 @@
-<!DOCTYPE html>
-<html lang="nl">
 
-    <head>
-        <title> Stichting Behoud Waardevol Erfgoed</title>
-        <meta charset = "utf-8">
 
-        {% load static %}
-        <!-- Style CSS-->
-        <link rel="stylesheet" type="text/css" href="{%static 'css/cssHeader.css' %}">
-        <link rel="stylesheet" type="text/css" href="{%static 'css/cssBody.css' %}">
-        <link rel="stylesheet" type="text/css" href="{%static 'css/cssStyle.css' %}">
-        
-        <style>
+{% extends "base.html" %}
 
-            .Vlak{
-                position:absolute;
-                    top: 100px;
-                    right: 50px;
-                width:40%;
-                border: 0px solid;
-                font-size: 30px;
-                font-weight: bold;
-            }
 
-        
+{% block content %} 
 
-            #buttonBK{
-                width:200px;
-                border: 3px solid rgb(241, 208, 24);
-                color:white;
-                background-color: rgb(241, 208, 24);
-                margin:80px 0 0 200px;
-                rotate: 0deg;
-                box-shadow: 5px 10px rgb(161, 161, 9);
-                  
-            }
+{% load static %} 
 
-            .Section1{
-                position:relative;
-                background-image: url("{% static 'img/Gebouw BK_middel.jpg' %}");
-                top: 100px;
-                width: 100%;
-                height:500px;
-                background-color:purple;
-            }
-         
-        </style>
-       
-        <!-- Bootstrap-CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<div class="container-fluid">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-        <!-- Beeldscherm: computer & telefoon -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    </head>
-
-    <body>
-    
-<!-- MENU -->
-    <header>
-        <nav class="navbar navbar-dark bg-transparent navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand"> Stichting Behoud Waardevol Erfgoed </a>
-                </div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="/index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="/VerhuurBK.html"> Verhuur Barthkapel
-                        <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/ReserveringBK.html"> Ruimte reserveren</a></li>
-                            <li><a href="/Beschikbaarheid.html"> Beschikbaarheid </a></li>
-                            <li><a href="/post_list.html"> Programma </a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/Panden.html">Panden</a></li>
-                    <li><a href="/Ateliers.html">Ateliers</a></li>
-                </ul>
-                
-            </div>
-        </nav>
-    </header>
-<!-- EINDE MENU -->
-
-       
-    
 <!-- FOTO -->
-        <div class="Section1">
-                <div>
-                        <div class="Vlak">
-                            Achter elke gevel gaat een verhaal schuil en die verhalen zijn de moeite van het
-                            vertellen waard.
-                        </div>
-        
-                        <button id="buttonBK">Barthkapel Verhuur</button> 
-                </div>
-        </div>
+    <div class="col md-12">
+        <img src="{%static 'img/Gebouw BK_middel.jpg' %}" >
+    </div>
+
+    <div class=" Vlak">
+        Achter elke gevel gaat een verhaal schuil en die verhalen zijn de moeite van het
+        vertellen waard.
+
+        <button id="buttonBK">Barthkapel Verhuur</button> 
+    </div>
+
+ 
 
 <!-- FOTO: EINDE-->
 
-<!--Container-->
-<div class="container blok1">
 
     <div class="row">  
-        <div class="col-4">  
-        </div>
-
-        <div class="col-8">      
-            <p>Waarborgen van oorspronkelijke stedelijke bebouwing in Den Haag en 
-                het stimuleren van de diversiteit van het gebruik van die bebouwing. Dat 
-                is waar Stichting Behoud Waardevol Erfgoed voor staat. 
-            </p>
-        </div>
+    <div class="col-12">      
+        <p>Waarborgen van oorspronkelijke stedelijke bebouwing in Den Haag en 
+            het stimuleren van de diversiteit van het gebruik van die bebouwing. Dat 
+            is waar Stichting Behoud Waardevol Erfgoed voor staat. 
+        </p>
     </div>
-         
-                  
+ 
+          
 </div> <!--Afsluiting container-->
 
-<!--FOOTER-->
 
-<footer class="footer">
-    <nav class="navbar navbar-dark bg-transparent">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <p> @ Copyright 2023 </p>
-                <p> Stichting Behoud Waardevol Erfgoed </p>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Historie</a></li>
-                <li><a href="/Contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-</footer>
-
-<!--FOOTER: EINDE-->
-
-
-
-        <!-- Javascript-->
-        <script src="{%static 'js/jquery.js' %}"></script>
-        <script src="{%static 'js/jquery.min.js' %}"></script>
-
-        <script> 
-
-            $('#buttonBK').on('click', function URL(){
-                location.href = "/VerhuurBK.html";
-
-            });
-
-        </script>
-
-</body>
-</html>
+{% endblock content %}  
