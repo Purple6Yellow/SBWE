@@ -81,6 +81,23 @@ DATABASES = {
     }
 }
 
+"""
+# toegevoegd tbv FullCalendar 
+
+DATABASES ={
+    'default':{
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '8000',
+    }
+}
+
+# Einde: toevoeging tbv FullCalendar 
+"""
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

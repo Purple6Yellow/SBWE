@@ -11,3 +11,5 @@ root.config(background = 'white')
 l1 =Label(root, text = text, font = "Consolas 10")
 l1.grid(row=2,column=1, padx=20)
 root.mainloop()
+
+calendar.setfirstweekday(calendar.SUNDAY)

@@ -1,1 +1,12 @@
-<py-script scr="/Calendar.py"></py-script>
+<!--  <py-script scr="/Calendar.py"></py-script> -->
+
+{% extends "base.html" %}
+
+{% block title %} Python Django Ajax fullCalendar CRUD (Creete, Read, Update and Delete) {% endblock title %}
+
+{% block content %} 
+<div class="col md-12">
+    FullCalendar
+    <div id = "calendar"> </div>
+</div>
+{% endblock content %}  

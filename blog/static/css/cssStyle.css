@@ -168,27 +168,6 @@ section{
 
 
 
-#buttonReser{
-    width:200px;
-    border: 3px solid rgb(241, 208, 24);
-    color:white;
-    background-color: rgb(241, 208, 24);
-    margin:300px 0 0 150px;
-    rotate: 0deg;
-    box-shadow: 5px 10px rgb(161, 161, 9);
-}
-
-#buttonAgenda{
-    width:200px;
-    border: 3px solid rgb(241, 208, 24);
-    color:white;
-    background-color: rgb(241, 208, 24);
-    position: relative;
-        top:10px;
-        left: 10px;
-    rotate: 0deg;
-    box-shadow: 5px 10px rgb(161, 161, 9);
-}
 
 #buttonRes{
     margin: 0 0 0 100px;
