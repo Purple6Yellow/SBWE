@@ -2,13 +2,14 @@
 
 
 {% block inhoud %}
+<a href="/post_list.html"> terug </a>
     <article class = "post">
         {% if post.published_date %}
         <time class = "date" >
             {{ post.published_date }}
         </time>
         {% endif %}
-        <p> {{ post.title }} </p>
-        <p> {{ post.text|linebreaksbr }} </p>
+        <p class = "LetB"> {{ post.title }} </p>
+        <p class = "LetB"></p>> {{ post.text|linebreaksbr }} </p>
     </article>
 {% endblock %}  

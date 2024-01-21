@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="nl"dir = 'ltr'>
+
+    <head>
+        <title> Stichting Behoud Waardevol Erfgoed</title>
+        <meta charset = "utf-8">
+    
+        {% load static %}
+        <!-- Style CSS-->
+        <link rel="stylesheet" type="text/css" href="{%static 'css/cssHeader.css' %}">
+        <link rel="stylesheet" type="text/css" href="{%static 'css/cssBody.css' %}">
+        <link rel="stylesheet" type="text/css" href="{%static 'css/cssStyle.css' %}">
+
+        <style> 
+            .Content_blok{
+                margin: 100px 100px 100px 100px;
+                border: 4px solid;
+            }
+            .inhoud{
+            /* Lettertype data  */
+                background-color: white;
+                margin:5px 150px 0px 150px;
+            }
+            .LetA{
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 23px;
+                font-weight: bold;
+                }
+            .footer{
+                color: white;
+            }
+            .header{
+                height:5%;
+                color:white;
+                background-color:blue;
+            }
+            .img3st{
+                width: 80%;
+            }
+    
+        </style>
+    
+       
+        <!-- Bootstrap-CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+        <!-- Beeldscherm: computer & telefoon -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+
+<!-- MENU -->
+
+<div class="header" > 
+
+        <nav class="navbar navbar-default navbar-fixed-top header">
+            <div class="container-fluid">
+            <div class="navbar-header navbar-light bg-transparent">
+                <a class="navbar-brand"> Stichting Behoud Waardevol Erfgoed </a>
+            </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="/VerhuurBK.html"> Verhuur Barthkapel
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/ReserveringBK.html"> Ruimte reserveren</a></li>
+                            <li><a href="#"> Beschikbaarheid </a></li>
+                            <li class="active"><a href="/post_list.html"> Programma </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/Panden.html">Panden</a></li>
+                    <li><a href="/Ateliers.html">Ateliers</a></li>
+                    <li><a href="#">Historie</a></li>
+                    <li><a href="/Contact.html">Contact</a></li>
+                </ul>
+            
+            </div>
+        </nav>
+
+</div>
+
+<!-- EINDE MENU -->
+
+<div class="Container Blok1 Content_blok">
+<!--SECTION A -->
+   
+        <p class="LetA">Programma Barthkapel</p>
+        <div class="row"> 
+            <div class = "col-2"></div>
+            <div class="col-8 inhoud">   
+                {% block inhoud %}
+                {% endblock %}
+            </div>
+        </div>
+
+<!--SECTION EINDE A-->
+
+<!--SECTION B -->
+
+    <div class="row">  
+        <div class="col-4"> 
+            <figure>
+                <a href="/AgendaBK.html"> <img class="img3st" src="{%static 'img/NotreDame.webp' %}" alt="Verhuur Barthkapel"> </a> <br>
+                <figcaption>Agenda </figcaption>
+            </figure>
+        </div>
+
+        <div class="col-4">   
+            <figure>
+                <a href="/Panden.html"> <img class="img3st" src="{%static 'img/NotreDame.webp' %}" alt="panden"> </a> <br>
+                <figcaption>Panden</figcaption>
+            </figure>
+        </div>
+
+        <div class="col-4">   
+            <figure>
+                <a href="/Panden.html"> <img class="img3st" src="{%static 'img/NotreDame.webp' %}" alt="panden"> </a> <br>
+                <figcaption>Panden</figcaption>
+            </figure>
+        </div>
+    </div>
+
+<!--SECTION EINDE B -->
+</div>
+                
+<!--SECTION FOOTER -->
+
+    <footer class="footer">
+        <p> @ Copyright 2024 </p>
+        <p> Stichting Behoud Waardevol Erfgoed </p>
+    </footer>
+
+        <!-- Javascript-->
+        <script src="{%static 'js/jquery.js' %}"></script>
+        <script src="{%static 'js/jquery.min.js' %}"></script>
+
+        <script> 
+
+            $('#buttonBK').on('click', function URL(){
+                location.href = "/VerhuurBK.html";
+
+            });
+
+        </script>
+
+</body>
+</html>

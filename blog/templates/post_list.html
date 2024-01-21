@@ -3,24 +3,13 @@
 <!DOCTYPE html>
 <html lang="nl">
 
-<head>
-    {% load static %}    
-    <style>
-   .LetB{
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 18px;
-        font-weight: normal;
-        }   
-
-    </style>
- 
-</head>
 <body>
 <!--SECTION-->             
         {% block inhoud %}
 
             {% for post in posts %}
-            <article class ="post">
+
+            <article class ="post vormgeving">
                 <time class = "date"> {{ post.created_date }} </time>
         
                 <p class = "LetB"> <a href="{% url 'post_inhoud' pk=post.pk %}"> {{ post.title }}</a></p>
