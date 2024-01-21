@@ -8,20 +8,17 @@
 {% load static %} 
 
 
-
+</div class="container-fluid"> <!--start container-->
 <!-- FOTO -->
-    <div class="col FOTO "> </div>
- 
-        <img src="{%static 'img/Gebouw BK_middel.jpg' %}" >
-
-    <div class=" Vlak">
-        Achter elke gevel gaat een verhaal schuil en die verhalen zijn de moeite van het
-        vertellen waard.
-
-        <button id="buttonBK">Barthkapel Verhuur</button> 
+    <div class="row FOTO ">     <img src="{%static 'img/Gebouw BK_middel.jpg' %}" >
+        <div class="col-8"></div>
+        <div class="col-4 Vlak">
+            Achter elke gevel gaat een verhaal schuil en die verhalen zijn de moeite van het
+            vertellen waard.
+    
+            <button id="buttonBK">Barthkapel Verhuur</button> 
+        </div>
     </div>
-
- 
 
 <!-- FOTO: EINDE-->
 
@@ -37,5 +34,17 @@
           
 </div> <!--Afsluiting container-->
 
+<script> 
+
+    $('#buttonBK').on('click', function URL(){
+        location.href = "/VerhuurBK.html";
+
+    });
+
+</script>
+
 
 {% endblock content %}  
+
+
+

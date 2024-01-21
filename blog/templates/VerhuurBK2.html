@@ -1,10 +1,16 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="nl">
 
-
-{% block content %} 
-
-{% load static %} 
 <head>
+    <title> Stichting Behoud Waardevol Erfgoed</title>
+    <meta charset = "utf-8">
+
+    {% load static %}
+    <!-- Style CSS-->
+    <link rel="stylesheet" type="text/css" href="{%static 'css/cssHeader.css' %}">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/cssBody.css' %}">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/cssStyle.css' %}">
+
     <style>
         .img1{
             width: 60%;
@@ -59,9 +65,49 @@
             rotate: 0deg;
             box-shadow: 5px 10px rgb(161, 161, 9);
         }
-        </style>
+
+    </style>
+
+    
+    <!-- Bootstrap-CSS tbv menu navbar -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+ 
+
+    <!-- Beeldscherm: computer & telefoon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
+
+<body>
+   
+   
+<!-- MENU -->
+<header>
+    <nav class="navbar navbar-dark bg-transparent navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand"> Stichting Behoud Waardevol Erfgoed </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="/index.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="/VerhuurBK.html"> Verhuur Barthkapel
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/ReserveringBK.html"> Ruimte reserveren</a></li>
+                        <li><a href="/Beschikbaarheid.html"> Beschikbaarheid </a></li>
+                        <li><a href="/post_list.html"> Programma </a></li>
+                    </ul>
+                </li>
+                <li><a href="/Panden.html">Panden</a></li>
+                <li><a href="/Ateliers.html">Ateliers</a></li>
+            </ul>
+            
+        </div>
+    </nav>
+</header>
+<!-- EINDE MENU -->
 
 <!--SECTION-->
 
@@ -161,7 +207,7 @@
     <!-- VIERDE RIJ -->
     <div class="row RIJ4">
         <div class="col">
-            <p> Voor een <a href="#"> <strong> impressie van de akoestiek  </strong> </a> in de kapel (met dank aan violiste Jasmijn Burger):
+            <p> Voor een <strong> impressie van de akoestiek  </strong> in de kapel (met dank aan violiste Jasmijn Burger):
             </p>
         </div>
     </div>
@@ -208,28 +254,33 @@
 </section>
 
         
-<!--EINDE SECTION-->
+   
+        <!-- Javascript-->
+        <script src="{%static 'js/jquery.js' %}"></script>
+        <script src="{%static 'js/jquery.min.js' %}"></script>
 
 
-{% endblock content %}  
-       
-<!-- Javascript-->
+         <script> 
 
-<script src="{%static 'js/jquery.js' %}"></script>
-<script src="{%static 'js/jquery.min.js' %}"></script>
+            $('#buttonReser').on('click', function URL(){
+                location.href = "/ReserveringBK.html";
+
+            });
+
+            
+            $('#buttonAgenda').on('click', function URL(){
+                location.href = "/AgendaBK.html";
+
+            });
+
+        </script>
+
+<!--FOOTER -->
+        <footer class="footer">
+            <p> @ Copyright 2023 </p>
+            <p> Stichting Behoud Waardevol Erfgoed </p>
+        </footer>
 
 
-    <script> 
-
-    $('#buttonReser').on('click', function URL(){
-        location.href = "/ReserveringBK.html";
-
-    });
-
-    
-    $('#buttonAgenda').on('click', function URL(){
-        location.href = "/AgendaBK.html";
-
-    });
-
-</script>
+</body>
+</html>
