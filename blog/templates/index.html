@@ -3,8 +3,8 @@
 {% extends "base.html" %}
 
 
-{% block content %} 
 
+{% block content %} 
 {% load static %} 
 <head>
     <style>
@@ -29,8 +29,16 @@
             } 
 
         .buttonBK{
-            width: 30%;
-        }
+            width:200px;
+            min-height: 100px;
+            border: 3px solid rgb(241, 208, 24);
+            color:white;
+            background-color: rgb(241, 208, 24);
+            margin:80px 0 0 200px;
+            rotate: 0deg;
+            box-shadow: 5px 10px rgb(161, 161, 9);      
+    }
+
 
         .Vl2{
             width: 80%;
@@ -42,14 +50,15 @@
 </head>
 
 <body>
-
+    
+ 
 </div class="container-fluid"> <!--start container-->
 
 <!-- FOTO -->
 
     <div class="row FOTO">  
         <div class="col-8">
-            <button id="buttonBK">Barthkapel Verhuur</button> 
+            <button class="buttonBK">Barthkapel Verhuur</button> 
         </div>
         <div class="col-3 LetA">      
             Achter elke gevel gaat een verhaal schuil en die verhalen zijn de moeite van het
@@ -83,7 +92,7 @@
 
 <script> 
 
-    $('#buttonBK').on('click', function URL(){
+    $('.buttonBK').on('click', function URL(){
         location.href = "/VerhuurBK.html";
 
     });

@@ -44,7 +44,6 @@ a.H:hover{
 
 /*             Algemeen: footer         */
 .footer{
-    background-color:#00151be1;
     text-align: center;
 }
 
@@ -71,7 +70,4 @@ a.H:hover{
 
 /* nieuwe stijl voor header / menu */
 
-.header{
-    background-color: yellow;
-    height: 100px;
-}
+

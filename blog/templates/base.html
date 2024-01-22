@@ -40,20 +40,28 @@
     }
 
 header{
-    background-color: inherit;
+    background-color: rgba(0, 0, 139, 0.687);
     margin:0px 0px 100px 0px;
     position: sticky;
     top: 0;
     z-index: 100;
+    min-height: 200px;
     }
 
-.bkbtn, .hmbtn, .hibtn {
-    background-color: white;
+footer{
+    background-color: rgba(0, 0, 139, 0.687);
+    min-height: 100px;
     color: black;
-    padding: 16px;
+}
+
+.bkbtn{
+    background-color: inheret;
+    padding: 12px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    position: relative;
+        right: 10px;
     }
 
 .dropdown {
@@ -79,18 +87,29 @@ header{
     }
 
 
-.dropdown-content a:hover, .MenuOnder a:hover {
+.dropdown-content a:hover {
     background-color: purple;
 }
 
-.MenuOnder a{
-    text-decoration: none;
-    position: absolute;
-        right:0px;
+.MenuOnder a:hover{
+    background-color: inherit;
+    color:white;
 }
+
+
+.MenuOnder, .MenuOnder a{
+    background-color:inherit;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+        right:100px;
+    color:black;
+}
+
 .dropdown:hover .dropdown-content {
     display: block;
-
     }
 
 
@@ -126,7 +145,7 @@ header{
                                             <a href="/Beschikbaarheid.html">Beschikbaarheid</a>
                                             <a href="/post_list.html">Programma</a>
                                             <a href="/Panden.html" class="bkbtn">Panden</a>
-                                            <a href="/Atelier.html" class="bkbtn">Atelier</a>
+                                            <a href="/Ateliers.html" class="bkbtn">Atelier</a>
                                         </div>
             </div>
         </div>
@@ -153,25 +172,26 @@ header{
 
 
     
-        <footer>
-            <div class="container-fluid">
+    <footer>
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-3">
-                </div>
-                <div class="col-3"> 
+                <div class="col-8">
                     <h5>  Copyright 2024 - SBWE</h5>
-            
+                    <a href="#"> Historie</a>
                 </div>
+
                 <div class="col-1">
                 </div>
-                <div class="col-2 MenuOnder">
-                    <a href="#" class="hibtn"> Historie</a>
-                    <a href="/Contact.html" class="hmbtn"> Contact</a>
+               
+                   
+                <div class="col-1 MenuOnder">
+                    
+                    <a href="/Contact.html" > Contact</a>
                 </div>
             </div>
-            </div>
+        </div>
 
-        </footer>
+    </footer>
 
         
         
