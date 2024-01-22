@@ -1,8 +1,8 @@
 <!--  <py-script scr="/Calendar.py"></py-script> -->
 
-{% extends "baseCal.html" %}
+{% extends "base.html" %}
 
-{% block title %} Python Django Ajax fullCalendar CRUD (Creete, Read, Update and Delete) {% endblock title %}
+
 
 
 {% block content %} 
@@ -11,4 +11,19 @@
     FullCalendar
     <div id = "calendar"> </div>
 </div>
+
+
+<script>
+    $(document).ready(function(){
+        var calendar = $('#calendar').fullCalendar({
+            header:{
+                left:'prev.next today',
+                center: 'title',
+                right: 'month, agendaWeek, agendaDay',
+            },
+
+        });
+    });
+</script>
+
 {% endblock content %}  
