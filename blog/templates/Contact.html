@@ -4,28 +4,47 @@
 {% load static %} 
 
 {% block content %} 
+<head>
+  <style>
+    body{
+      background-image: url("{% static 'img/Gebouw BK_middel.jpg' %}");
+    }
 
-  <!--SECTION-->
+  </style>
+</head>
 
-  <div class="container blok1">
+
+</div class="container-fluid"> <!--start container-->
+
+<!-- FOTO -->
+
     <div class="row">  
-      <div class="col-4">
+        <div class="col-8">
+            <button id="buttonBK">Barthkapel Verhuur</button> 
+        </div>
+        <div class="col-3 LetA">      
+            Achter elke gevel gaat een verhaal schuil en die verhalen zijn de moeite van het
+            vertellen waard.
 
-        <strong>Adres: </strong><br> <br>
-        Brouwersgracht 2K, <br>
-        2512 ER Den Haag <br>
-        Stichtingbwe@gmail.com <br> <br> 
-
-        <strong>  Telefoon: </strong><br> <br>
-        06 14 18 70 96 <br> <br>
-            (reserveringen voor de Barthkapel <br> gaan uitsluitend via de mail) <br>
-      </div>
-      <div class="col-8">      
-        <img class="img3st" src="{%static 'img/NotreDame.webp' %}" alt="Ateliers">
-      </div>
+        </div>
     </div>
-</div>
 
+
+<!-- FOTO: EINDE-->
+
+
+    <div class="row">  
+        <div class="col-1"></div>
+        <div class="col-10 LetB Vl2">      
+            <p>Waarborgen van oorspronkelijke stedelijke bebouwing in Den Haag en 
+                het stimuleren van de diversiteit van het gebruik van die bebouwing. Dat 
+                is waar Stichting Behoud Waardevol Erfgoed voor staat. 
+            </p>
+        </div>
+        <div class="col-1"></div>
+    </div>
+          
+</div> <!--Afsluiting container-->
 
  
        
