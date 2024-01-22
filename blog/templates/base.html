@@ -41,9 +41,10 @@
 
 header{
     background-color: inherit;
-   /* display:inline-block;
-   position: fixed; */
-   margin:0px 0px 100px 0px;
+    margin:0px 0px 100px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
     }
 
 .bkbtn, .hmbtn, .hibtn {
@@ -99,9 +100,10 @@ header{
 
 <!-- MENU -->
 
-<div class="container-fluid">
+
 
     <header>
+        <div class="container-fluid"></div>
         <div class="row">
         <div class="col-2"> </div>
         <div class="col-4"> 
@@ -125,27 +127,32 @@ header{
                                             </div>
                 </div>
             </div>
+            </div>
     </header>
-</div>
+
     
     
 <!-- EINDE MENU -->
-
-
-    <div class = "container-fluid">
-        <div class="row">
-         
-            {% block content %} {% endblock %}
+    <section>
+        <div class = "container-fluid">
+            <div class="row">
+                <div class="col">
+                    {% block content %} {% endblock %}
+                </div>
+            </div>
         </div>
 
-    </div>
+    </section>
+
+
 
 
 <!-- FOOTER-->
 
-    <div class="container-fluid">
+
     
         <footer>
+            <div class="container-fluid">
             <div class="row">
                 <div class="col-5">
                 </div>
@@ -160,9 +167,10 @@ header{
                     <a href="/Contact.html" class="hmbtn"> Contact</a>
                 </div>
             </div>
+            </div>
 
         </footer>
-    </div>
+
         
         
 <!-- EINDE FOOTER -->

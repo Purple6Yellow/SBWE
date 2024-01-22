@@ -6,33 +6,65 @@
 {% block content %} 
 
 {% load static %} 
+<head>
+    <style>
+        .FOTO{
+            background-image: url("{% static 'img/Gebouw BK_middel.jpg' %}");
+            min-height: 500px;
+        }
 
+        .LetA{
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .LetB{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            font-weight: normal;
+            } 
+
+
+    </style>
+</head>
+
+<body>
 
 </div class="container-fluid"> <!--start container-->
+
 <!-- FOTO -->
-    <div class="row FOTO ">     <img src="{%static 'img/Gebouw BK_middel.jpg' %}" >
-        <div class="col-8"></div>
-        <div class="col-4 Vlak">
-            Achter elke gevel gaat een verhaal schuil en die verhalen zijn de moeite van het
-            vertellen waard.
-    
+
+    <div class="row FOTO">  
+        <div class="col 8">
             <button id="buttonBK">Barthkapel Verhuur</button> 
         </div>
+        <div class="col-3 LetA">      
+            Achter elke gevel gaat een verhaal schuil en die verhalen zijn de moeite van het
+            vertellen waard.
+
+        </div>
     </div>
+
 
 <!-- FOTO: EINDE-->
 
 
     <div class="row">  
-    <div class="col-12">      
-        <p>Waarborgen van oorspronkelijke stedelijke bebouwing in Den Haag en 
-            het stimuleren van de diversiteit van het gebruik van die bebouwing. Dat 
-            is waar Stichting Behoud Waardevol Erfgoed voor staat. 
-        </p>
+        <div class="col-12 LetB">      
+            <p>Waarborgen van oorspronkelijke stedelijke bebouwing in Den Haag en 
+                het stimuleren van de diversiteit van het gebruik van die bebouwing. Dat 
+                is waar Stichting Behoud Waardevol Erfgoed voor staat. 
+            </p>
+        </div>
     </div>
- 
           
 </div> <!--Afsluiting container-->
+
+
+
+</body>
+
+
 
 <script> 
 
@@ -42,6 +74,7 @@
     });
 
 </script>
+
 
 
 {% endblock content %}  
