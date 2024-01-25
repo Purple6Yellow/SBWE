@@ -1,0 +1,107 @@
+
+
+{% extends "base.html" %}
+
+
+
+{% block content %} 
+{% load static %} 
+<head>
+    <style>
+        .FOTO{
+            background-image: url("{% static 'img/Gebouw BK_middel.jpg' %}");
+            min-height: 500px;
+            width: 100%;
+            Background-size: 90%;
+            background-repeat: no-repeat;
+        }
+
+        .LetA{
+            font-size: 30px;
+            font-weight: bold;
+            width: 30%;
+        }
+
+        .LetB{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            font-weight: normal;
+            } 
+
+        .buttonBK{
+            width:200px;
+            min-height: 100px;
+            border: 3px solid rgb(241, 208, 24);
+            color:white;
+            background-color: rgb(241, 208, 24);
+            margin:80px 0 0 200px;
+            rotate: 0deg;
+            box-shadow: 5px 10px rgb(161, 161, 9);      
+    }
+
+
+        .Vl2{
+            width: 80%;
+            margin: 30px 0px 0px 0px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    
+ 
+</div class="container-fluid"> <!--start container-->
+
+<!-- FOTO -->
+
+    <div class="row FOTO">  
+        <div class="col-8">
+            <button class="buttonBK">Barthkapel Verhuur</button> 
+        </div>
+        <div class="col-3 LetA">      
+            Achter elke gevel gaat een verhaal schuil en die verhalen zijn de moeite van het
+            vertellen waard.
+
+        </div>
+    </div>
+
+
+<!-- FOTO: EINDE-->
+
+
+    <div class="row">  
+        <div class="col-1"></div>
+        <div class="col-10 LetB Vl2">      
+            <p>Waarborgen van oorspronkelijke stedelijke bebouwing in Den Haag en 
+                het stimuleren van de diversiteit van het gebruik van die bebouwing. Dat 
+                is waar Stichting Behoud Waardevol Erfgoed voor staat. 
+            </p>
+        </div>
+        <div class="col-1"></div>
+    </div>
+          
+</div> <!--Afsluiting container-->
+
+
+
+</body>
+
+
+
+<script> 
+
+    $('.buttonBK').on('click', function URL(){
+        location.href = "/VerhuurBK.html";
+
+    });
+
+</script>
+
+
+
+{% endblock content %}  
+
+
+

@@ -16,7 +16,7 @@ def Inhoud (request):
     return render (request, 'inhoud.html', {})
 
 def Home (request):
-    return render (request, 'index.html', {})
+    return render (request, 'Index.html', {})
 
 def Panden (request):
     return render (request, 'Panden.html', {})
@@ -28,7 +28,7 @@ def Fotogalerie (request):
     return render (request, 'Fotogalerie.html', {})
 
 def Ateliers (request):
-    return render (request, 'Ateliers.html', {})
+    return render (request, 'Atelier.html', {})
 
 def VerhuurBK (request):
     return render (request, 'VerhuurBK.html', {})
@@ -44,3 +44,6 @@ def Beschikbaarheid (request):
 
 def Contact (request):
     return render (request, 'Contact.html', {})
+
+def Historie (request):
+    return render (request, 'Historie.html', {})

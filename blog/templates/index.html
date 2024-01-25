@@ -1,93 +1,244 @@
-
-
-{% extends "base.html" %}
-
-
-
-{% block content %} 
-{% load static %} 
+<!DOCTYPE html>
+<html>
 <head>
+    <title> Stichting Behoud Waardevol Erfgoed</title>
+    <meta charset = "utf-8">
+
+    {% load static %}
+    <!-- Style CSS-->
+    <link rel="stylesheet" type="text/css" href="{%static 'css/cssHeader.css' %}">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/cssBody.css' %}">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/cssStyle.css' %}">
+
+
+    <!-- Bootstrap-CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+      <!-- Bootstrap-CSS tbv containers-->
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Beeldscherm: computer & telefoon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style>
-        .FOTO{
-            background-image: url("{% static 'img/Gebouw BK_middel.jpg' %}");
-            min-height: 500px;
-            width: 100%;
-            Background-size: 90%;
-            background-repeat: no-repeat;
-        }
 
-        .LetA{
-            font-size: 30px;
-            font-weight: bold;
-            width: 30%;
-        }
-
-        .LetB{
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: 18px;
-            font-weight: normal;
-            } 
-
-        .buttonBK{
-            width:200px;
-            min-height: 100px;
+.buttonBK{
+            width:300px;
+            min-height: 70px;
             border: 3px solid rgb(241, 208, 24);
-            color:white;
+            color: hsla(240, 100%, 50%, 0.415);
             background-color: rgb(241, 208, 24);
-            margin:80px 0 0 200px;
+            margin:100px 0 0 0px;
             rotate: 0deg;
-            box-shadow: 5px 10px rgb(161, 161, 9);      
+            box-shadow: 20px 30px rgb(161, 161, 9);  
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            font-weight:900;
+    }
+
+    /*   LET op header is bij base.html anders geen foto     */
+  
+header{
+    opacity: 1;
+    margin:0px 0px 100px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    min-height: 200px;
+    background-image: url("{% static 'img/Gebouw BK_middel.jpg' %}");
+    min-height: 900px;
+    width: 100%;
+    Background-size: 100%;
+    background-repeat: no-repeat;
+        }
+
+
+footer{
+    background-color: rgba(0, 0, 139, 0.687);
+    min-height: 100px;
+    margin-top: 50px;
+    
+}
+
+.bkbtn {
+    background-color: inheret;
+    padding: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+        right: 10px;
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+        right:10px;
+    background-color: white;
+    min-width: 350px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+.dropdown-content a, .dropdown a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
     }
 
 
-        .Vl2{
-            width: 80%;
-            margin: 30px 0px 0px 0px;
-        }
+.dropdown-content a:hover {
+    background-color: purple;
+}
+
+.MenuOnder a:hover{
+    background-color: inherit;
+    color:#fbf308;
+}
+
+
+.MenuOnder, .MenuOnder a{
+    background-color:inherit;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-decoration: none;
+    color:#f7f7c6;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+.LetA{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        font-weight: normal;
+        } 
+
+.Pos{
+    position: relative;
+        right: 0px;
+        top: 200px;
+    height: 50%;
+    width: 50%;
+    }
 
 
     </style>
+
 </head>
 
 <body>
-    
- 
-</div class="container-fluid"> <!--start container-->
 
-<!-- FOTO -->
+<!-- MENU -->
 
-    <div class="row FOTO">  
-        <div class="col-8">
-            <button class="buttonBK">Barthkapel Verhuur</button> 
-        </div>
-        <div class="col-3 LetA">      
+
+
+
+
+<header>
+    <div class="container-"></div>
+    <div class="row">
+    <div class="col-sm-2"> 
+     
+    </div>
+
+    <div class="col-sm-6">
+        <h1>  Stichting Behoud Waardevol Erfgoed </h1>
+        <button class="buttonBK">Barthkapel Verhuur</button>  
+     </div>
+
+    <div class="col-sm-3"> 
+      
+        <div class="Pos LetA">      
             Achter elke gevel gaat een verhaal schuil en die verhalen zijn de moeite van het
             vertellen waard.
 
         </div>
     </div>
 
-
-<!-- FOTO: EINDE-->
-
-
-    <div class="row">  
-        <div class="col-1"></div>
-        <div class="col-10 LetB Vl2">      
-            <p>Waarborgen van oorspronkelijke stedelijke bebouwing in Den Haag en 
-                het stimuleren van de diversiteit van het gebruik van die bebouwing. Dat 
-                is waar Stichting Behoud Waardevol Erfgoed voor staat. 
-            </p>
+        <div class="col-sm-1">
+            <div class="dropdown">
+                                    <a class="bkbtn">Menu</a>
+                                        <div class="dropdown-content">
+                                            <a href="/Index.html" class="bkbtn">Home</a>
+                                            <a href="/VerhuurBK.html" class="bkbtn">Barthkapel</a>            
+                                            <a href="/ReserveringBK.html">Reservering</a>
+                                            <a href="/Beschikbaarheid.html">Beschikbaarheid</a>
+                                            <a href="/post_list.html">Programma</a>
+                                            <a href="/Panden.html" class="bkbtn">Panden</a>
+                                            <a href="/Atelier.html" class="bkbtn">Atelier</a>
+                                        </div>
+            </div>
         </div>
-        <div class="col-1"></div>
     </div>
-          
-</div> <!--Afsluiting container-->
+</header>
+    
+    
+<!-- EINDE MENU -->
+    <section>
+        <div class = "container-fluid">
+
+            <div class="row">
+                <div class="col-sm-12">       
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-sm-12 LetA">
+                    Waarborgen van oorspronkelijke stedelijke bebouwing in Den Haag en 
+                    het stimuleren van de diversiteit van het gebruik van die bebouwing. Dat 
+                    is waar Stichting Behoud Waardevol Erfgoed voor staat.                    
+                </div>
+            </div>
+        </div>
+
+    </section>
 
 
 
-</body>
 
+<!-- FOOTER-->
+
+<footer>
+    <div class="container-"></div>
+    <div class="row">
+    <div class="col-sm-2"> 
+    </div>
+
+    <div class="col-sm-6 LetA"> 
+        <h5>  Copyright 2024 - SBWE</h5>
+     </div>
+
+    <div class="col-sm-3"> 
+    </div>
+
+        <div class="col-sm-1">
+            <div class="MenuOnder">
+                        <a href="/histoire.html" >Historie</a>
+                        <a href="/Contact.html">Contact</a>
+                            
+            </div>
+        </div>
+    </div>
+</footer>
+
+     
+        
+<!-- EINDE FOOTER -->
 
 
 <script> 
@@ -100,8 +251,6 @@
 </script>
 
 
+</body>
 
-{% endblock content %}  
-
-
-
+</html>

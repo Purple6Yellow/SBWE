@@ -7,7 +7,7 @@ urlpatterns = [
     path('post_list.html/',views.post_list, name='post_list'),
     path('post/<int:pk>/', views.post_detail, name='post_inhoud'),
     path('inhoud.html/', views.Inhoud),
-    path('index.html/', views.Home),
+    path('Index.html/', views.Home),
 
 
     path('VerhuurBK.html/', views.VerhuurBK),
@@ -17,7 +17,9 @@ urlpatterns = [
     path('Fotogalerie.html/', views.Fotogalerie),
     path('Panden.html/', views.Panden),
         path('Rembrandt.html/', views.Rembrandt),
-    path('Ateliers.html/', views.Ateliers),
+    path('Atelier.html/', views.Ateliers),
     path('Contact.html/', views.Contact),
+    path('Historie.html/', views.Historie),
+    
     
 ]

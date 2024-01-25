@@ -27,32 +27,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
-#buttonAgenda2{
-    width:200px;
-    border: 3px solid rgb(241, 208, 24);
-    color:white;
-    background-color: rgb(241, 208, 24);
-    position: relative;
-        top:50px;
-        right: 0px;
-    rotate: 0deg;
-    box-shadow: 5px 10px rgb(161, 161, 9);
+
+.buttonBK{
+            width:300px;
+            min-height: 70px;
+            border: 3px solid rgb(241, 208, 24);
+            color: hsla(240, 100%, 50%, 0.415);
+            background-color: rgb(241, 208, 24);
+            margin:100px 0 0 0px;
+            rotate: 0deg;
+            box-shadow: 20px 30px rgb(161, 161, 9);  
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            font-weight:900;
     }
 
+
 header{
-    background-color: rgba(0, 0, 139, 0.687);
     opacity: 1;
     margin:0px 0px 100px 0px;
     position: sticky;
     top: 0;
     z-index: 100;
     min-height: 200px;
-    }
+    background-image: url("{% static 'img/Gebouw BK_middel.jpg' %}");
+    min-height: 900px;
+    width: 100%;
+    Background-size: 100%;
+    background-repeat: no-repeat;
+        }
+
 
 footer{
     background-color: rgba(0, 0, 139, 0.687);
     min-height: 100px;
-    color: black;
+    margin-top: 50px;
+    
 }
 
 .bkbtn {
@@ -74,9 +84,9 @@ footer{
 .dropdown-content {
     display: none;
     position: absolute;
-        right:0px;
-    background-color: #f9f9f9;
-    min-width: 160px;
+        right:10px;
+    background-color: white;
+    min-width: 350px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     }
@@ -95,12 +105,6 @@ footer{
 
 .MenuOnder a:hover{
     background-color: inherit;
-    color:white;
-}
-
-
-.MenuOnder a:hover{
-    background-color: inherit;
     color:#fbf308;
 }
 
@@ -112,15 +116,24 @@ footer{
     text-decoration: none;
     color:#f7f7c6;
 }
+
 .dropdown:hover .dropdown-content {
     display: block;
     }
 
 .LetA{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-    } 
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        font-weight: normal;
+        } 
+
+.Pos{
+    position: relative;
+        right: 0px;
+        top: 200px;
+    height: 50%;
+    width: 50%;
+    }
 
 
     </style>
@@ -136,20 +149,31 @@ footer{
 
 
 <header>
-    <div class="container-fluid"></div>
+    <div class="container-"></div>
     <div class="row">
-    <div class="col-6"> 
-       <h1>  Stichting Behoud Waardevol Erfgoed </h1>
+    <div class="col-sm-2"> 
+     
     </div>
 
-    <div class="col-5"> 
+    <div class="col-sm-6">
+        <h1>  Stichting Behoud Waardevol Erfgoed </h1>
+        <button class="buttonBK">Barthkapel Verhuur</button>  
+     </div>
+
+    <div class="col-sm-3"> 
+      
+        <div class="Pos LetA">      
+            Achter elke gevel gaat een verhaal schuil en die verhalen zijn de moeite van het
+            vertellen waard.
+
+        </div>
     </div>
 
-        <div class="col-1">
+        <div class="col-sm-1">
             <div class="dropdown">
                                     <a class="bkbtn">Menu</a>
                                         <div class="dropdown-content">
-                                            <a href="/Index.html" class="bkbtn">Home</a>
+                                            <a href="/index.html" class="bkbtn">Home</a>
                                             <a href="/VerhuurBK.html" class="bkbtn">Barthkapel</a>            
                                             <a href="/ReserveringBK.html">Reservering</a>
                                             <a href="/Beschikbaarheid.html">Beschikbaarheid</a>
@@ -166,9 +190,17 @@ footer{
 <!-- EINDE MENU -->
     <section>
         <div class = "container-fluid">
+
             <div class="row">
-                <div class="col">
-                    {% block content %} {% endblock %}
+                <div class="col-sm-12">       
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-sm-12 LetA">
+                    Waarborgen van oorspronkelijke stedelijke bebouwing in Den Haag en 
+                    het stimuleren van de diversiteit van het gebruik van die bebouwing. Dat 
+                    is waar Stichting Behoud Waardevol Erfgoed voor staat.                    
                 </div>
             </div>
         </div>
@@ -203,9 +235,19 @@ footer{
     </div>
 </footer>
 
-        
+     
         
 <!-- EINDE FOOTER -->
+
+
+<script> 
+
+    $('.buttonBK').on('click', function URL(){
+        location.href = "/VerhuurBK.html";
+
+    });
+
+</script>
 
 
 </body>
