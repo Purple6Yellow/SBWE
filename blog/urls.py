@@ -7,7 +7,7 @@ urlpatterns = [
     path('post_list.html/',views.post_list, name='post_list'),
     path('post/<int:pk>/', views.post_detail, name='post_inhoud'),
     path('inhoud.html/', views.Inhoud),
-    path('Index.html/', views.Home),
+    path('index.html/', views.Home),
 
 
     path('VerhuurBK.html/', views.VerhuurBK),

@@ -16,7 +16,7 @@ def Inhoud (request):
     return render (request, 'inhoud.html', {})
 
 def Home (request):
-    return render (request, 'Index.html', {})
+    return render (request, 'index.html', {})
 
 def Panden (request):
     return render (request, 'Panden.html', {})
