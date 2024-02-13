@@ -1,127 +1,67 @@
-<!DOCTYPE html>
-<html lang="nl">
+{% extends "baseA.html" %}
+{% load static %} 
 
-    <head>
-        <title> Stichting Behoud Waardevol Erfgoed</title>
-        <meta charset = "utf-8">
-
-        {% load static %}
-        <!-- Style CSS-->
-        <link rel="stylesheet" type="text/css" href="{%static 'css/cssHeader.css' %}">
-        <link rel="stylesheet" type="text/css" href="{%static 'css/cssBody.css' %}">
-        <link rel="stylesheet" type="text/css" href="{%static 'css/cssStyle.css' %}">
-
-        <!-- Bootstrap-CSS -->
-        <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-        crossorigin="anonymous">
-        
-        <!-- Javascript-->
-        <script src="static/js/jquery.js"></script>
-        <script src="static/js/jquery.min.js"></script>
-
-    </head>
-
-    <body>
-            <header class="boven">
-                <!-- 1e  deel -->
-             
-                    <h1>Stichting Behoud Waardevol Erfgoed</h1>
-                    <h5> Cultureel vastgoed</h5>
-                    <h5 class="pagina"> Panden </h5>
-               
-                    <div>
-                        <li class="H"> <a class="H" href="/inhoud.html"> Menu  </a></li> 
-                    </div>
-            </header>
+{% block content %} 
 
 
-            <!--SECTION-->
+<!--SECTION--> <div>
+        <div class="container blok1">
 
-            <div class="container blok1">
-                   <!--rij-->
+        <!--rij-->
+        <div class="row">  
+            <div class="col-2"> </div>
 
-                <div class="row ">
-                    <div class="col">
-                      1What is Lorem Ipsum?
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                      
-                     sum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 tr
-                    </div>
-                  </div>
+            <div class="col-4"> 
+                <figure>
+                    <a href="/Rembrandt.html"> <img class="img3st" src="{%static 'img/NotreDame.webp' %}" alt=""> </a> <br>
+                    <figcaption>Rembrandtstraat</figcaption>
+                </figure>
+            </div>
 
-                    <!--rij-->
-                <div class="row">  
-                    <div class="col-2"> </div>
+            <div class="col-4"> 
+                <figure>
+                    <a href="/Looyer.html"> <img class="img3st" src="{%static 'img/NotreDame.webp' %}" alt=""> </a> <br>
+                    <figcaption>Looyerstraat</figcaption>
+                </figure>
+            </div>
+        </div>
 
-                    <div class="col-4"> 
-                        <figure>
-                            <a href="Rembrandt.html"> <img class="img3st" src="{%static 'img/NotreDame.webp' %}" alt=""> </a> <br>
-                            <figcaption>Rembrandtstraat</figcaption>
-                        </figure>
-                    </div>
+        <!--rij-->
+        <div class="row">  
+            <div class="col-2"> </div>
 
-                    <div class="col-4"> 
-                        <figure>
-                            <a href="VerhuurBK.html"> <img class="img3st" src="{%static 'img/NotreDame.webp' %}" alt=""> </a> <br>
-                            <figcaption>Looyerstraat</figcaption>
-                        </figure>
-                    </div>
-                </div>
+            <div class="col-4"> 
+                <figure>
+                    <a href="/Prinsegracht.html"> <img class="img3st" src="{%static 'img/NotreDame.webp' %}" alt=""> </a> <br>
+                    <figcaption>Prinsegracht 40</figcaption>
+                </figure>
+            </div>
 
-                   <!--rij-->
+            <div class="col-4"> 
+                <figure>
+                    <a href="/Lepel.html"> <img class="img3st" src="{%static 'img/NotreDame.webp' %}" alt=""> </a> <br>
+                    <figcaption>Lepelstraat</figcaption>
+                </figure>
+            </div>
+        </div>
 
-                <div class="row">  
-                    <div class="col-2"> </div>
+        <!--rij-->
+        <div class="row">  
+            <div class="col-4"> </div>
 
-                    <div class="col-4"> 
-                        <figure>
-                            <a href="VerhuurBK.html"> <img class="img3st" src="{%static 'img/NotreDame.webp' %}" alt=""> </a> <br>
-                            <figcaption>Prinsegracht 40</figcaption>
-                        </figure>
-                    </div>
+            <div class="col-4"> 
+                <figure>
+                    <a href="/Barthkapel.html"> <img class="img3st" src="{%static 'img/NotreDame.webp' %}" alt=""> </a> <br>
+                    <figcaption>Barthkapel</figcaption>
+                </figure>
+            </div>
 
-                    <div class="col-4"> 
-                        <figure>
-                            <a href="VerhuurBK.html"> <img class="img3st" src="{%static 'img/NotreDame.webp' %}" alt=""> </a> <br>
-                            <figcaption>Lepelstraat</figcaption>
-                        </figure>
-                    </div>
-                </div>
+            <div class="col-4"> 
+            </div>
+        </div>
 
-                    <!--rij-->
-                <div class="row">  
-                    <div class="col-4"> </div>
-
-                    <div class="col-4"> 
-                        <figure>
-                            <a href="VerhuurBK.html"> <img class="img3st" src="{%static 'img/NotreDame.webp' %}" alt=""> </a> <br>
-                            <figcaption>Barthkapel</figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="col-4"> 
-                    </div>
-                </div>
+       </div>
+</div><!--SECTION-->
 
 
-            <!--SECTION-->
-
-    <footer class="footer">
-        <p> @ Copyright 2023 </p>
-        <p> Stichting Behoud Waardevol Erfgoed </p>
-    </footer>
-
-
-            <script>
-
-            $('#buttonBK').on('click', function URL(){
-                location.href = "VerhuurBK.html";
-
-            });
-
-            </script>
-
-</body>
-</html>
+{% endblock content %}  

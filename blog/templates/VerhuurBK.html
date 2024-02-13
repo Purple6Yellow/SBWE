@@ -1,235 +1,147 @@
-{% extends "base.html" %}
+{% extends "baseA.html" %}
+{% load static %} 
 
 
 {% block content %} 
 
-{% load static %} 
-<head>
-    <style>
-        .img1{
-            width: 60%;
-        }
-          
-        .RIJ1{
-            padding: 10px;
-            border: 0px solid;
-            background-color: white;
-            margin-top: 50px;
-            }
-        
-        .RIJ2{
-            border: 0px solid;
-            background-color: white;
-            margin-top: 50px;
-        }
+    <!--SECTION--><section> 
+        <div class="container">
 
-        .RIJ3{
-            border: 0px solid;
-            background-color: white;
-            margin-top: 50px;
-        }
-
-        .RIJ4{
-            border: 0px solid;
-            background-color: white;
-            margin-top: 50px;
-        }
-
-        #buttonReser{
-            position:relative;
-                top:5px;
-                right:0px;
-            width:200px;
-            border: 3px solid rgb(241, 208, 24);
-            color:white;
-            background-color: rgb(241, 208, 24);
-            margin:0px 0 0 0px;
-            rotate: 0deg;
-            box-shadow: 5px 10px rgb(161, 161, 9);
-        }
-
-        #buttonAgenda{
-            width:200px;
-            border: 3px solid rgb(241, 208, 24);
-            color:white;
-            background-color: rgb(241, 208, 24);
-            position: relative;
-                top:50px;
-                right: 0px;
-            rotate: 0deg;
-            box-shadow: 5px 10px rgb(161, 161, 9);
-        }
-        </style>
-
-</head>
-
-<!--SECTION-->
-
-<section> 
-    <div class="container">
-
-        <!-- EERSTE RIJ -->
-        <div class="row RIJ1">
-            <div class="col">
-                <p> <strong> Stichting Behoud Waardevol Erfgoed </strong> verhuurt een authentieke kapel in het centrum van de stad. 
-                    De Barthkapel is te huur voor: Concerten, optredens, yogalessen, exposities, balletlessen, lezingen, kerkdiensten, workshops, vergaderingen,
-                    recepties, boekpresentaties etc.
-                    Huurders die op regelmatige basis (bijv. een ochtend in de week) willen huren, zijn ook van harte welkom. 
-                    Verstrekte muziek is niet toegestaan. <br> <br>
-
-                    <button id="buttonReser">Reservering</button> 
-                    <button id="buttonAgenda">Agenda</button> 
-
-                 
-                </p>
+            <!-- EERSTE RIJ -->
+            <div class="row RIJ1">
+                <div class="col">
+                    <p class="font"> <strong> Stichting Behoud Waardevol Erfgoed </strong> verhuurt een authentieke kapel in het centrum van de stad. 
+                        De Barthkapel is te huur voor: Concerten, optredens, yogalessen, exposities, balletlessen, lezingen, kerkdiensten, workshops, vergaderingen,
+                        recepties, boekpresentaties etc.
+                        Huurders die op regelmatige basis (bijv. een ochtend in de week) willen huren, zijn ook van harte welkom. 
+                        Verstrekte muziek is niet toegestaan. <br> <br>   
+                    
+                    </p>
+                </div>
             </div>
-        </div>
-
-        <!-- TWEEDE RIJ -->
-
-        <div class="row RIJ2">
-            <table>
-                <tr>
-                    <td> 
-                        <figure>
-                            <a href="/ReserveringBK.html"> <img class="img1" src="{%static 'img/BK3.jpg' %}" alt="Reservering"> </a> <br>
-                            <figcaption></figcaption>
-                        </figure>
-                    </td>
-                    <td> 
-                        <figure>
-                            <a href="/post_list.html"> <img class="img1" src="{%static 'img/BK2.jpg' %}" alt="Ateliers"> </a> <br>
-                            <figcaption></figcaption>
-                        </figure>
-                    </td>
-                    <td> 
-                        <figure>
-                            <a href="/AgendaBK"> <img class="img1" src="{%static 'img/BK1.jpg' %}" alt="Agenda Barthkapel"> </a> <br>
-                            <figcaption></figcaption>
-                        </figure>
-                    </td>
-                    <td> 
-                        <figure>
-                            <a href="/AgendaBK"> <img class="img1" src="{%static 'img/BK1.jpg' %}" alt="Agenda Barthkapel"> </a> <br>
-                            <figcaption></figcaption>
-                        </figure>
-                    </td>
-                </tr>
-             
-             
-            </table>
+    
+            <!-- TWEEDE RIJ -->
+            <div class="row RIJ2" class="font">
+                <table>
+                    <tr>
+                        <td> 
+                            <figure>
+                                <img class="img1" src="{%static 'img/BKVerhuur6.jpg' %}" alt=""><br>
+                                <figcaption></figcaption>
+                            </figure>
+                        </td>
+                        <td> 
+                            <figure>
+                                <img class="img1" src="{%static 'img/BKVerhuur6.jpg' %}" alt=""><br>
+                                <figcaption></figcaption>
+                            </figure>
+                        </td>
+                        <td> 
+                            <figure>
+                                <img class="img1" src="{%static 'img/BKVerhuur6.jpg' %}" alt=""><br>
+                                <figcaption></figcaption>
+                            </figure>
+                        </td>
+                        <td> 
+                            <figure>
+                                <img class="img1" src="{%static 'img/BKVerhuur6.jpg' %}" alt=""><br>
+                                <figcaption></figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                 
+                 
+                </table>
+            </div>
+          
+        
+    
+       
+            <!-- DERDE RIJ -->
+    
+            <div class="row RIJ2" class="font">
+                <table>
+                    <tr>
+                        <td> 
+                            <figure>
+                                <img class="img1" src="{%static 'img/BKVerhuur6.jpg' %}" alt=""><br>
+                                <figcaption></figcaption>
+                            </figure>
+                        </td>
+                        <td> 
+                            <figure>
+                                <img class="img1" src="{%static 'img/BKVerhuur6.jpg' %}" alt="Reservering"><br>
+                                <figcaption></figcaption>
+                            </figure>
+                        </td>
+                        <td> 
+                            <figure>
+                                <img class="img1" src="{%static 'img/BKVerhuur6.jpg' %}" alt="Reservering"><br>
+                                <figcaption></figcaption>
+                            </figure>
+                        </td>
+                        <td> 
+                            <figure>
+                                <img class="img1" src="{%static 'img/BKVerhuur6.jpg' %}" alt="Reservering"><br>
+                                <figcaption></figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                 
+                 
+                </table>
+            </div>
+    
+    
+        <!-- VIERDE RIJ -->
+        <div class="row RIJ4" class="font">
+            <div class="col">
+                        <p> Voor een <a href="/Impressie.html"> <strong> impressie van de akoestiek  </strong> </a> in de kapel (met dank aan violiste Jasmijn Burger): </a> </p>            
+            </div>
         </div>
     
-
-   
-        <!-- DERDE RIJ -->
-
-        <div class="row RIJ2">
-            <table>
-                <tr>
-                    <td> 
-                        <figure>
-                            <a href="/ReserveringBK.html"> <img class="img1" src="{%static 'img/BK3.jpg' %}" alt="Reservering"> </a> <br>
-                            <figcaption></figcaption>
-                        </figure>
-                    </td>
-                    <td> 
-                        <figure>
-                            <a href="/post_list.html"> <img class="img1" src="{%static 'img/BK2.jpg' %}" alt="Ateliers"> </a> <br>
-                            <figcaption></figcaption>
-                        </figure>
-                    </td>
-                    <td> 
-                        <figure>
-                            <a href="/AgendaBK"> <img class="img1" src="{%static 'img/BK1.jpg' %}" alt="Agenda Barthkapel"> </a> <br>
-                            <figcaption></figcaption>
-                        </figure>
-                    </td>
-                    <td> 
-                        <figure>
-                            <a href="/AgendaBK"> <img class="img1" src="{%static 'img/BK1.jpg' %}" alt="Agenda Barthkapel"> </a> <br>
-                            <figcaption></figcaption>
-                        </figure>
-                    </td>
-                </tr>
-             
-             
-            </table>
-        </div>
-
-
-    <!-- VIERDE RIJ -->
-    <div class="row RIJ4">
-        <div class="col">
-            <p> Voor een <a href="#"> <strong> impressie van de akoestiek  </strong> </a> in de kapel (met dank aan violiste Jasmijn Burger):
-            </p>
-        </div>
-    </div>
-
-
-
-    <!-- VIJFDE RIJ -->
-
-        <div class="row RIJ4">
-            <div class="col">
-                <p> <strong> Gegevens kapel: </strong> 
-                    <ul>
-                        <li> afmeting: +/- 100 m2 </li>
-                        <li> aantal stoelen: 80 </li>
-                        <li> twee lange tafels en twee statafels </li>
-                        <li> ruime keuken met inventaris en koelkast </li>
-                    </ul>
-                </p>
-            </div>
-
-            <div> <strong> Prijzen per 1 september 2023 </strong><br> <br>
-            37,50 per uur. 
-            <ul>
-                <li>Korting voor studenten van het Koninklijk Conservatorium / KABK</li>
-            </ul>
-           
-            <br> 
-            Adres: <br>
-            Brouwersgracht 2K Den Haag <br>
-            (bereikbaar vanaf de Brouwersgracht via de smalle steeg die naar de kloostertuin en de kapel leidt)
-
-            <br> <br> 
-
-            <strong> Voor meer informatie en verhuur, mail naar Stichtingbwe@gmail.com </strong> <br>
-            <a href=""> <strong> en klik hier voor de annuleringsvoorwaarden </strong></a>
+    
+    
+        <!-- VIJFDE RIJ -->
+    
+            <div class="row RIJ4" class="font">
+                <div class="col">
+                    <p> <strong> Gegevens kapel: </strong> 
+                        <ul>
+                            <li> afmeting: +/- 100 m2 </li>
+                            <li> aantal stoelen: 80 </li>
+                            <li> twee lange tafels en twee statafels </li>
+                            <li> ruime keuken met inventaris en koelkast </li>
+                        </ul>
+                    </p>
+                </div>
+    
+                <div> <strong> Prijzen per 1 september 2023 </strong><br> <br>
+                37,50 per uur. 
+                <ul>
+                    <li>Korting voor studenten van het Koninklijk Conservatorium / KABK</li>
+                </ul>
+               
+                <br> 
+                Adres: <br>
+                Brouwersgracht 2K Den Haag <br>
+                (bereikbaar vanaf de Brouwersgracht via de smalle steeg die naar de kloostertuin en de kapel leidt)
+    
+                <br> <br> 
+    
+                <strong> Voor meer informatie en verhuur, mail naar Stichtingbwe@gmail.com </strong> <br>
+                <a href=""> <strong> en klik hier voor de annuleringsvoorwaarden </strong></a>
+                
+    
+              
             
-
-          
-        
+                </div>
             </div>
         </div>
-    </div>
+    
+    </section><!--EINDE SECTION-->
 
-</section>
 
-        
-<!--EINDE SECTION-->
 
 
 {% endblock content %}  
-       
-<!-- Javascript-->
-
-<script src="{%static 'js/jquery.js' %}"></script>
-<script src="{%static 'js/jquery.min.js' %}"></script>
-
-
-    <script> 
-
-    $('#buttonReser').on('click', function URL(){
-        location.href = "/ReserveringBK.html";
-
-    });
-
-    
-    $('#buttonAgenda').on('click', function URL(){
-        location.href = "/Beschikbaarheid.html";
-
-    });
-
-</script>

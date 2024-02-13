@@ -5,6 +5,27 @@
 /*  Geordernd op html pagina */
 
 
+/* MEERDERE TABBLADEN */
+
+
+/* header */
+
+
+
+/* ENKELE TABBLADEN */
+
+
+/* index */
+
+.Vlak{
+    position:absolute;
+        top: 200px;
+        right: 40px;
+    width:40%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 
 /* AgendaBK */
 
@@ -315,6 +336,14 @@ figure{
     text-align: center; 
     display: block;
 }
+
+ /*            na 12 februari 2024 toegevoegd       */
+ 
+
+
+
+
+
 
  /*            Einde        */
  

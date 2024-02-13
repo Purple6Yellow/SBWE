@@ -24,14 +24,26 @@ def Panden (request):
 def Rembrandt (request):
     return render (request, 'Rembrandt.html', {})
 
-def Fotogalerie (request):
-    return render (request, 'Fotogalerie.html', {})
+def Looyer (request):
+    return render (request, 'Looyer.html', {})
+
+def Lepel (request):
+    return render (request, 'Lepel.html', {})
+
+def Prins (request):
+    return render (request, 'Prinsegracht.html', {})
+
+def Barthkapel (request):
+    return render (request, 'Barthkapel.html', {})
 
 def Ateliers (request):
     return render (request, 'Atelier.html', {})
 
 def VerhuurBK (request):
     return render (request, 'VerhuurBK.html', {})
+
+def BKImpressie (request):
+    return render (request, 'Impressie.html', {})
 
 def Reservering (request):
     return render (request, 'ReserveringBK.html', {})
@@ -45,5 +57,5 @@ def Beschikbaarheid (request):
 def Contact (request):
     return render (request, 'Contact.html', {})
 
-def Historie (request):
-    return render (request, 'Historie.html', {})
+def OverSBWE (request):
+    return render (request, 'OverSBWE.html', {})
