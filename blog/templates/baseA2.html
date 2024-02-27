@@ -25,73 +25,50 @@
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <style>
-
             
-            .boven{
-                background-color:#00151be1;
+            .menu1 {
+                display: inline-block;
+                position: absolute;
+                    top: 70%;
+                    right: 5%;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: large;
+                }
+
+            .menu1 a{
+                text-decoration: none;
+                padding-left: 30px;
                 color: white;
-                text-align: center;
+            }
+
+            .menu1 a:hover{
+                color:rgb(228, 187, 21);
+            }
+
+            .font{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            }
+
+            .boven{
+                width:100%;
+                height: 100px;
+                background-color:#00151be1;
                 position: fixed;
                     top:5px;
+                text-align: center;
+                color: white;
             }
 
             footer{
-                background-color:#00151be1;
+                height: 100px;
+                width: 100%;
+                background-color:#00151be1 ;
+                position:relative;
+                    bottom:5px;
                 text-align: center;
-                color:white;
-            }
-
-            .menu1{  
-                background-color:#00151be1;
                 color: white;
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                font-size: large;
-    
             }
-
-            .menu1 ul{
-                list-style-type: none;
-                margin: 0;
-                padding:2px;
-            }
-
-            .menu1 li{
-                padding: 4px;
-                margin-bottom: 7px;
-                background-color:#116b84e1;
-                color: white;
-                float:center;
-            }
-
-            .menu1 a{
-                text-decoration:none;
-                color:white;
-            }
-
-            .menu1 li:hover {
-                background-color: red;
-                color: rgb(228, 187, 21);
-            }
-    
-
-            /* Fluid grid - 12 kolommen */
-
-            [class*="col-"]{
-            float: left;
-            padding: 2px;
-                    }
-                        .col-1 {width: 8.33%;}
-                        .col-2 {width: 16.66%;}
-                        .col-3 {width: 25%;}
-                        .col-4 {width: 33.33%;}
-                        .col-5 {width: 41.66%;}
-                        .col-6 {width: 50%;}
-                        .col-7 {width: 58.33%;}
-                        .col-8 {width: 66.66%;}
-                        .col-9 {width: 75%;}
-                        .col-10 {width: 83.33%;}
-                        .col-11 {width: 91.66%;}
-                        .col-12 {width: 100%;}            
  
             .RIJ1{
                 padding: 10px;
@@ -110,18 +87,15 @@
    /* Mediaquery: CSS waarde wanneer scherm groter is dan smartphone / 768px  */
    @media only screen and (min-width: 768px){
                 #boven{
-                    background-color:#00151be1;
+                    background-color: purple;
                     color: white;
                     text-align: center;
                     }
                 .menu li{
-                    padding: 2px;
+                    padding: 8px;
                     margin-bottom: 7px;
-                    background-color:yellow;
+                    background-color: olive;
                     float:right;
-                }
-                .font{
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 }
             }
        
@@ -132,13 +106,13 @@
     </head>
 
     <body>
-            <header class="boven col-12">
+            <header class="boven">
                 <!-- 1e  deel -->
              
                     <h1 class="font">Stichting Behoud Waardevol Erfgoed</h1>
                     <h5 class="font"> Cultureel vastgoed</h5>
                     
-                    <div class="menu1 col-12">
+                    <div class="menu1">
                         <a href="/index.html" >Home</a>
                         <a href="/VerhuurBK.html" >Barthkapel</a>            
                       <!-- 
